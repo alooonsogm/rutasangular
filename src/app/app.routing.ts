@@ -6,6 +6,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 import { NotfoundComponent } from "./components/notfound.component/notfound.component";
 import { NumerodobleComponent } from "./components/numerodoble.component/numerodoble.component";
+import { TablamultiplicarroutingComponent } from "./components/tablamultiplicarrouting.component/tablamultiplicarrouting.component";
 
 //Necesitamos un array con las rutas, dicho array sera de tipo Routes.
 const appRoutes: Routes = [
@@ -13,6 +14,8 @@ const appRoutes: Routes = [
     { path: "cine", component: CineComponent },
     { path: "musica", component: MusicaComponent },
     { path: "numerodoble", component: NumerodobleComponent },
+    { path: "numerodoble/:numero", component: NumerodobleComponent },
+    { path: "tablamultiplicar/:numero", component: TablamultiplicarroutingComponent },
     { path: "**", component: NotfoundComponent },
 ]
 

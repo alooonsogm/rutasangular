@@ -1,3 +1,16 @@
 <div>
     <h1>Numero doble</h1>
+    @if (numero){
+        <h2 style="color: blue;">
+            El doble de {{numero}} es {{doble}}
+        </h2>
+    } @else {
+        <h2 style=" color: red;">
+            No hemos recibido parametro
+        </h2>
+    }
+    <button (click)="goToHome()">Go to Home</button>
+    <button (click)="redirect(4)">Doble 4</button>
+    <button (click)="redirect(7)">Doble 7</button>
+    <button (click)="redirect(85)">Doble 85</button>
 </div>

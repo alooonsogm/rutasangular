@@ -1,0 +1,19 @@
+<div>
+    <h1>Tabla de multiplicar</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Opercion</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(result of arrayTabla; track result){
+                <tr>
+                    <td>{{numero}} * {{($index + 1)}}</td>
+                    <td>{{result}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

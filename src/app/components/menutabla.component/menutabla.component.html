@@ -1,0 +1,12 @@
+<div>
+    <ul id="menu">
+        <li>
+            <a [routerLink]="['/']">Home | </a>
+        </li>
+        @for(num of arrayNumerosAleatorios; track num){
+            <li>
+                <a [routerLink]="['/tablamultiplicar', num]">Tabla Multiplicar {{num}} | </a>
+            </li>
+        }
+    </ul>
+</div>
